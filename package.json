@@ -1,21 +1,21 @@
 {
   "name": "employee-recognition-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "apollo-server": "^3.13.0",
     "graphql": "^16.11.0",
-    "graphql-subscriptions": "^3.0.0"
+    "graphql-subscriptions": "^3.0.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.2.0",
+    "@types/uuid": "^9.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
