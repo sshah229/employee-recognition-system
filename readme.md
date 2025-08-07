@@ -45,7 +45,7 @@ Employees can send “kudos” to one another with messages and emojis, with pub
 - method: POST
 - url: http://localhost:4000/graphql
 - Headers- Content-Type:application/json
-- Body- select graphql and paste this
+- Body- select graphql and paste this:
 
 mutation {
   addRecognition(
